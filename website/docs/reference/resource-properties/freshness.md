@@ -40,7 +40,7 @@ In the `freshness` block, one or both of `warn_after` and `error_after` can be p
 Additionally, the `loaded_at_field` is required to calculate freshness for a table. If a `loaded_at_field` is not provided, then dbt will not calculate freshness for the table.
 
 Freshness blocks are applied hierarchically:
-- a `freshness` and `loaded_at_field` property added to a source will be applied to all all tables defined in that source
+- a `freshness` and `loaded_at_field` property added to a source will be applied to all tables defined in that source
 - a `freshness` and `loaded_at_field` property added to a source _table_ will override any properties applied to the source.
 
 This is useful when all of the tables in a source have the same `loaded_at_field`, as is often the case.
