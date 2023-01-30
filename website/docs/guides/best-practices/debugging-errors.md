@@ -351,7 +351,7 @@ Database Error in model customers (models/customers.sql)
 In some cases, these errors might occur as a result of queries that dbt runs "behind-the-scenes". These include:
 - Introspective queries to list objects in your database
 - Queries to `create` schemas
-- `pre-hooks`s, `post-hooks`, `on-run-end` hooks and `on-run-start` hooks
+- `pre-hook`s, `post-hook`s, `on-run-end` hooks and `on-run-start` hooks
 - For incremental models, and snapshots: merge, update and insert statements
 
 In these cases, you should check out the logs — this contains _all_ the queries dbt has run.
